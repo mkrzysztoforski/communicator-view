@@ -1,0 +1,13 @@
+<main [class]="colorMode">
+    <div class="bg"></div>
+    <h1>Make your<br>chat room <strong>safe.</strong></h1>
+
+    <div class="buttons">
+        <button class="create" (click)="createRoom()">Create Room</button>
+        <span>OR</span>
+        <label>
+            <input #roomKey type="text" placeholder="Type room key">
+        </label>
+        <button class="connect" (click)="connectWithExist(roomKey.value)">Connect</button>
+    </div>
+</main>
